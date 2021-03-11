@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="What_s_The_Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What's The Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGV-Zv-leL">
+                                <rect key="frame" x="3" y="225" width="314" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fao-gs-2ZH">
+                                <rect key="frame" x="3" y="254" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-IM-1f4">
+                                <rect key="frame" x="80" y="339" width="160" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Get Weather"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrT-Xv-hhY">
+                                <rect key="frame" x="0.0" y="383" width="335" height="119"/>
+                                <string key="text">Light rain (total 2mm), mostly falling on Tue night. Very mild (max 13°C on Tue afternoon, min 4°C on Thu night). Winds increasing (light winds from the NW on Tue afternoon, strong winds from the WSW by Wed night)</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="impressive-orange-light-display-in-cloudy-sky.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wBn-BS-OK7">
+                                <rect key="frame" x="-772.5" y="-293" width="1920" height="960"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's The Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAX-Z6-kJP">
+                                <rect key="frame" x="30.5" y="26" width="314" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QA-bF-jLg">
+                                <rect key="frame" x="107" y="153" width="161" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Get Weather"/>
+                                <connections>
+                                    <action selector="getWeatherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8N-jz-eNa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNw-CY-kR2">
+                                <rect key="frame" x="20" y="254" width="335" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkW-LO-wEh">
+                                <rect key="frame" x="18" y="111" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wBn-BS-OK7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="8yc-06-LgX"/>
+                            <constraint firstItem="nAX-Z6-kJP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="EBQ-ea-uGT"/>
+                            <constraint firstItem="nAX-Z6-kJP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FXk-6r-Jsq"/>
+                            <constraint firstItem="HGV-Zv-leL" firstAttribute="trailing" secondItem="fao-gs-2ZH" secondAttribute="trailing" id="OS3-zL-Aka"/>
+                            <constraint firstItem="HGV-Zv-leL" firstAttribute="leading" secondItem="fao-gs-2ZH" secondAttribute="leading" id="Qhv-2U-2Ak"/>
+                            <constraint firstItem="HGV-Zv-leL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="3" id="Xfp-eZ-WOs"/>
+                            <constraint firstItem="lrT-Xv-hhY" firstAttribute="top" secondItem="1QZ-IM-1f4" secondAttribute="bottom" constant="8" id="evF-MM-zP1"/>
+                            <constraint firstItem="1QZ-IM-1f4" firstAttribute="top" secondItem="fao-gs-2ZH" secondAttribute="bottom" constant="51" id="mxl-eN-IGX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lrT-Xv-hhY" secondAttribute="trailing" constant="40" id="oOb-lc-Jur"/>
+                            <constraint firstItem="1QZ-IM-1f4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="r28-zc-8d5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lrT-Xv-hhY" secondAttribute="bottom" constant="165" id="rIA-43-p4M"/>
+                            <constraint firstItem="fao-gs-2ZH" firstAttribute="centerX" secondItem="1QZ-IM-1f4" secondAttribute="centerX" id="roo-4i-3ym"/>
+                            <constraint firstItem="lrT-Xv-hhY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sBH-kf-wgd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="vkW-LO-wEh" id="cMR-RG-xh9"/>
+                        <outlet property="weatherReportLabel" destination="cNw-CY-kR2" id="aGm-6V-h8H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-21.600000000000001" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="impressive-orange-light-display-in-cloudy-sky.jpg" width="1920" height="960"/>
+    </resources>
+</document>
